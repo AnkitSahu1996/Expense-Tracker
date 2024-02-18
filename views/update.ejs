@@ -1,0 +1,27 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<div class="form-wrap">
+    <form action="/update/<%= expense._id %>" method="post">
+        <h1>Update Expense</h1>
+
+        <label for="Title">Title:</label>
+        <input type="text" name="Title" value="<%= expense.Title %>" required>
+        <br> <br>
+        <label for="Amount">Amount:</label>
+        <input type="number" name="Amount" value="<%= expense.Amount %>" required>
+        <br> <br>
+        <label for="Description">Description:</label>
+        <textarea name="Description"><%= expense.Description %></textarea>
+        <br> <br>
+        <label for="Categories">Categories:</label>
+        <input type="text" name="Categories" value="<%= expense.Categories %>" required>
+        <br> <br>
+        <label for="Tags">Tags:</label>
+        <input type="text" name="Tags" value="<%= expense.Tags %>" required>
+        <br> <br>
+        
+        <button>Update the Expense</button>
+
+    </form>
+</div>
+<%- include("partials/footer")%>

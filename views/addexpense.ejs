@@ -1,0 +1,27 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<div class="form-wrap">
+    <form action="/addexpense" method="post">
+        <h1>Add Expense</h1>
+
+        <label for="Title">Title:</label> <br>
+        <input type="text" name="Title" required>
+        <br> <br>
+        <label for="Amount">Amount:</label>
+        <input type="number" name="Amount" required>
+        <br> <br>
+        <label for="Description">Description:</label>
+        <textarea name="Description"></textarea>
+        <br> <br>
+        <label for="Categories">Categories:</label>
+        <input type="text" name="Categories" required>
+        <br> <br>
+        <label for="Tags">Tags:</label>
+        <input type="text" name="Tags" required>
+        <br> <br>
+        
+        <button>Add the Expense</button>
+
+    </form>
+</div>
+<%- include("partials/footer")%>

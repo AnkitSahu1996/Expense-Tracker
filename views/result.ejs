@@ -1,0 +1,24 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<!-- Display Search and Filter Results -->
+<h2>Search Results:</h2>
+<ul>
+    <% if (expenses.length > 0) { %>
+        <% for (let expense of expenses) { %>
+            <li>
+                <strong>Title:</strong> <%= expense.Title %><br>
+                <strong>Amount:</strong> <%= expense.Amount %><br>
+                <strong>Description:</strong> <%= expense.Description %><br>
+                <strong>Date:</strong> <%= expense.Date %><br>
+                <strong>Tags:</strong> <%= expense.Tags %><br>
+                <!-- Display other expense details as needed -->
+            </li>
+        <% } %>
+    <% } else { %>
+        <li>No results found.</li>
+    <% } %>
+</ul>
+
+
+<%- include("partials/footer")%>

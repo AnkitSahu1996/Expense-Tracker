@@ -1,0 +1,17 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<h1>View all your Expenses Here</h1>
+<div class="card-wrap">
+    <% expenses.forEach((e)=>{ %>
+        <div class="expense-card">
+        <h2>Title:- <%= e.Title %></h2>
+        <h2>Amount:- <%= e.Amount %></h2>
+        <h2>Description:- <%= e.Description %></h2>
+        <h2>Categories:- <%= e.Categories %></h2>
+        <h2>Tags:- <%= e.Tags %></h2>
+        <h2>Date:- <%= e.Date %></h2>
+        <button><a href="/update/<%= e._id %>">Update</a></button>
+        <button><a href="/delete/<%= e._id %>">Delete</a></button>
+        <% }) %>
+    </div>
+<%- include("partials/footer")%>

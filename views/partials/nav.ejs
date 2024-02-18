@@ -1,0 +1,21 @@
+<nav>
+  <div class="logo">
+    <h3>Expense Tracker</h3>
+  </div>
+  <ul>
+    <% if(!admin){ %>
+    <li><a href="/">Home</a></li>
+    <li><a href="/signup">Sign Up</a></li>
+    <li><a href="/signin">Sign In</a></li>
+
+    <% } else{ %>
+    <li><a href="/profile">Home</a></li>
+    <li><a href="/addexpense">Add Expense</a></li>
+    <li><a href="/Dashboard">Dashboard</a></li>
+    <li><a href="/search">Search and Filter</a></li>
+    <li><a href="/reset">Reset Password</a></li>
+    <li><a href="/signout">Sign Out</a></li>
+    <% } %>
+  </ul>
+</nav>
+

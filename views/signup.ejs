@@ -1,0 +1,20 @@
+<%- include("partials/header")%>
+<div class="bg-img">
+    <%- include("partials/nav")%>
+    <div class="form-wrap">
+    <h1>Sign Up Yourself Here</h1>
+    <form action="/signup" method="post">
+        <input type="text" name="username" placeholder="Enter your Name here">
+        <br> <br>
+        <input type="password" name="password" placeholder="Enter the password here">
+        <br> <br>
+        <input type="email" name="email" placeholder="Enter your E-mail here">
+        <br> <br>
+        <input type="number" name="contactNumber" placeholder="Enter your contact Number">
+        <br> <br>
+        <button type="reset">Reset</button>
+        <button>Submit</button>
+    </form>
+</div>
+</div>
+<%- include("partials/footer")%>

@@ -1,0 +1,34 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<div class="form-wrap">
+
+<h1>Search your Expense here</h1>
+    
+    <!-- Search Form -->
+<form action="/search" method="post">
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="search" placeholder="Enter search term">
+    <br> <br>
+    <button type="submit">Search</button>
+</form>
+<br>
+<hr>
+<br>
+<h1>Filter your Expense here</h1>
+<!-- Filtering Form -->
+<form action="/filter" method="post">
+    <label for="Date">Filter by Date (dd/mm/yyyy):</label>
+    <input type="text"  name="Date" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy">
+    <br> <br>
+    <label for="Categories">Filter by Category:</label>
+    <input type="text" name="Categories" placeholder="Enter Categories">
+    <br> <br>
+    <label for="Tags">Filter by Tags:</label>
+    <input type="text" name="Tags" placeholder="Enter tags">
+    <br> <br>
+    <button type="submit">Filter</button>
+</form>
+
+</div>
+<%- include("partials/footer")%>

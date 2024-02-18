@@ -1,0 +1,13 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<div class="form-wrap">
+    <h1>Reset your password here</h1>
+    <form action="/reset" method="post">
+        <input type="password" name="oldPassword" placeholder="Enter the old Password">
+        <br> <br>
+        <input type="password" name="newPassword" placeholder="Enter the new Password">
+        <br> <br>
+        <button>Reset Password</button>
+    </form>
+</div>
+<%- include("partials/footer")%>

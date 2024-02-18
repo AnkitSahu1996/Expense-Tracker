@@ -1,0 +1,17 @@
+<%- include("partials/header")%>
+<div class="bg-img">
+    <%- include("partials/nav")%>
+    <div class="form-wrap">
+    <h1>Please Sign In Here</h1>
+    <form action="/signin" method="post">
+        <input type="text" name="username" placeholder="Enter your Name here">
+        <br> <br>
+        <input type="password" name="password" placeholder="Enter the password here">
+        <br> <br>
+        <button>Submit</button>
+        &nbsp;
+        <a href="/forget">Forget Password</a>
+    </form>
+</div>
+</div>
+<%- include("partials/footer")%>

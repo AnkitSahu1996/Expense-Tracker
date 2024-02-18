@@ -1,0 +1,17 @@
+<%- include("partials/header")%>
+<div class="bg-img">
+    <%- include("partials/nav")%>
+    <div class="form-wrap">
+        <h1>Create your new password here</h1>
+        <form action="/forget" method="post">
+            <input type="text" name="username" placeholder="Enter your Name here">
+            <br> <br>
+            <input type="password" name="newPassword" placeholder="Enter the new Password">
+            <br> <br>
+            <button>Submit</button>
+            &nbsp;
+        </form>
+    </div>
+</div>
+    <%- include("partials/footer")%>
+

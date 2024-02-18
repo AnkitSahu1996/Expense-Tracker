@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #FAEED1;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* styles.css */
+nav {
+  background-color: black;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h3 {
+  margin: 0;
+  color: #FAEED1;
+}
+
+nav ul {
+  /* border: 2px solid red; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: burlywood;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff; /* Change the color on hover if desired */
+}
+
+h1{
+  margin: 3vh 2vw;
+  color: #4b558a;
+}
+
+.bg-img{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1593538313188-7a6ab30a8ae4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGV4cGVuc2UlMjB0cmFja2VyfGVufDB8fDB8fHww");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button{
+  color: #D8D9DA;
+  background-color: #61677A;
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fff; /* Change the color on hover if desired */
+}
+
+.form-wrap{
+  border: 2px solid #4b558a;
+  width: 35vw;
+  margin-top: 2%;
+  margin-left: 35%;
+  padding: 2vh;
+}
+
+form{
+  margin-left: 2vmax;
+}
+
+input{
+  background-color: #D8D9DA;
+  color: #4b558a;
+  padding: 2vh;
+  width: 90%;
+}
+
+textarea{
+  background-color: #D8D9DA;
+  color: #4b558a;
+  padding: 3vh 3vw;
+  width: 90%;
+}
+
+::placeholder {
+  color: #4b558a;
+  opacity: 1; /* Firefox */
+}
+
+a {
+  color: #D8D9DA;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.expense-card{ 
+  height: auto;
+  width: 380px;
+  border: 1px solid #4b558a;
+  padding: 1% 2%;
+}
+
+.card-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 2%;
+}
+
+h2{
+  margin: 2vh 1.5vh;
+  color: #445069;
+}
